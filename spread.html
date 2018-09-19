@@ -1,0 +1,36 @@
+
+<script>
+    const arr1 = [1, 2, 3];
+    const arr2 = [4,5];
+    // Add elements of an existing array to a new array or combine arrays
+    arr1.push(...arr2);
+    console.log(arr1);
+    
+    const arr3 = [2,3, ...arr2];
+    console.log(arr3);
+    
+    // Copy arrays
+    const arr4 = [...arr1];
+    // pass elements to an function
+    function addThree(x, y, z){
+        console.log(x+y+z);
+    }
+    const args = [0,1,2]
+    addThree(...args);
+    
+    // concatenate array
+    
+    var arr5 = [0, 1, 2];
+    const arr6 = [3, 4, 5];
+    console.log(arr5.concat(arr6));
+    arr5 = [...arr5, ...arr6];
+    console.log(arr5);
+    
+    // destructuring
+    function add(...args) {
+       const arr = [...args, 5, 6];
+       console.log(arr);
+    }
+    const numbers = [1, 2, 3, 4 ]
+    add(numbers);
+    </script>
