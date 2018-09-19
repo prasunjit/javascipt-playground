@@ -1,4 +1,5 @@
-
+// Spread operator spread or expands elements or expnads elements of an array
+// Rest operator condenses multiple elements into array, so it is opposite
 <script>
     const arr1 = [1, 2, 3];
     const arr2 = [4,5];
@@ -33,4 +34,14 @@
     }
     const numbers = [1, 2, 3, 4 ]
     add(numbers);
+
+    // REST: operator
+    function multiply(...args){
+        return args.map(function(element) {
+            return element;
+        })
+    }
+
+    const arr = multiply(2,2);
+    console.log(arr);
     </script>
